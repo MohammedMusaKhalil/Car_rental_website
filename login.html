@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="booking.css" />
+    <script src="booking.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div id="brand">موقع إيجار السيارات</div>
+      <ul>
+        <li style="float: right">
+          <a class="active" href="login.html">تسجيل الدخول</a>
+        </li>
+        <li style="float: right"><a href="vehicles.html">المركبات</a></li>
+        <li style="float: right"><a href="booking.html">إيجار</a></li>
+        <li style="float: right">
+          <a href="home.html">الرئيسية</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="flex-container formContainer loginContainer">
+        <div class="div1">
+          <!-- form -->
+          <form name="LoginForm">
+            <div class="width100">
+              <p id="logInText">تسجيل الدخول</p>
+              <input
+                class="inputWithSymbol"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+              />
+              <div id="usernameError" class="formError"></div>
+            </div>
+
+            <div class="width100">
+              <input
+                class="inputWithSymbol"
+                type="text"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
+              <div id="passwordError" class="formError"></div>
+            </div>
+
+            <div>
+              <button class="width100 button1" type="button" onclick="login()">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="div2">
+          <!-- display car -->
+          <p class="textHeading">مرحبا</p>
+          <p class="subtext">أدخل بياناتك وابدأ الرحلة معنا </p>
+          <div>
+            <button
+              type="button"
+              class="button2"
+              id="registerButtonLoginPage"
+              onclick="goToRegister()"
+            >
+              تسجيل
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="booking.css" />
+
+    <script src="booking.js"></script>
+  </head>
+
+  <body>
+    <div class="top-bar">
+      <div id="brand">موقع إيجار السيارات</div>
+      <ul>
+        <li style="float: right">
+          <a class="active" href="login.html">تسجيل الدخول</a>
+        </li>
+        <li style="float: right"><a href="vehicles.html">المركبات</a></li>
+        <li style="float: right"><a href="booking.html">إيجار</a></li>
+        <li style="float: right">
+          <a href="home.html">الرئيسية</a>
+        </li>
+      </ul>
+    </div>
+
+    <main>
+      <div class="flex-container formContainer registerContainer">
+        <div class="div1 registerDiv">
+          <!-- form -->
+          <form name="registrationForm">
+            <div class="width100">
+              <p id="logInText">تسجيل</p>
+            </div>
+            <div>
+              <input
+                class="width100"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+              <div id="nameError" class="formError"></div>
+            </div>
+
+            <div>
+              <input
+                class="width100"
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+                required
+              />
+              <div id="usernameError" class="formError"></div>
+            </div>
+
+            <div>
+              <input
+                class="width100"
+                type="text"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+              <div id="passwordError" class="formError"></div>
+            </div>
+
+            <div>
+              <input
+                class="width100"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+              <div id="emailError" class="formError"></div>
+            </div>
+
+            <div>
+              <input
+                class="width100"
+                type="text"
+                id="mobilenumber"
+                name="mobilenumber"
+                placeholder="Mobile number"
+                required
+              />
+              <div id="mobileNumberError" class="formError"></div>
+            </div>
+
+            <div>
+              <button
+                class="width100 button1"
+                type="button"
+                onclick="register()"
+              >
+                تسجيل
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
